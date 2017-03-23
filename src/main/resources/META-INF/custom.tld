@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<taglib>
+    <tlib-version>1.0</tlib-version>
+    <jsp-version>2.0</jsp-version>
+    <short-name>Tag Lib Demo</short-name>
+    <!-- uri can be whatever you choose, it does not have to point to a real url
+        the uri will be used in the jsps that use the tag lib -->
+    <uri>http://matc.edu/tags</uri>
+    <tag>
+        <!-- name defines the tag that will be used in jsps to call your tag code -->
+        <name>Hello</name>
+        <!-- tag-class is the fully qualified class containing the doTag()
+            method that should run when <Hello> is used -->
+        <tag-class>edu.matc.taglibdemo.HelloWorldTag</tag-class>
+        <!-- body content is used to pass values to your tag code -->
+        <body-content>empty</body-content>
+    </tag>
+
+    <tag>
+        <name>DateWithMessage</name>
+        <tag-class>edu.matc.taglibdemo.DateWithMessage</tag-class>
+        <body-content>empty</body-content>
+    </tag>
+
+</taglib>
+
